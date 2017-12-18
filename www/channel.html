@@ -27,48 +27,7 @@
 <div class="container">
 
     <!-- Header-->
-    <nav class="main-header navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-2 logo-header">
-                    <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
-                            YouTube
-                            <span>Channels</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-1 col-xs-12 col-sm-3">
-                    <div id="navbar" class="navbar-collapse ">
-                        <ul class="nav navbar-nav ">
-                            <li class="">
-                                <a href="channels.html" class="text-uppercase">channels
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-1 col-xs-12 col-sm-3">
-                    <ul class="nav navbar-nav  ">
-                        <li class="">
-                            <a href="videos.html" class="text-uppercase">videos
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-7 col-xs-12 col-sm-3">
-                    <ul class="nav navbar-nav  navbar-right ">
-                        <li class="dropdown ">
-                            <a href="login.html" class=" text-uppercase">Logout
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </nav>
-    <!-- End header-->
+    <div id="header"></div>
 
 
     <section class="content">
@@ -95,51 +54,57 @@
                                             <div class="col-lg-12">
                                                 <div class="col-lg-2 pl-0">
                                                     <h6 class="text-capitalize">subscribers</h6>
-                                                    <td>
-                                                        <div class="col-12">
-                                                            <strong class="c-white">122.444</strong>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <span>+433</span>
-                                                        </div>
-                                                    </td>
 
+                                                    <div class="col-12">
+                                                        <strong class="c-white">122.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+433</span>
+                                                    </div>
                                                 </div>
                                                 <div class="col-lg-2 pl-0">
                                                     <h6 class="text-capitalize">views</h6>
-                                                    <td>
-                                                        <div class="col-12">
-                                                            <strong class="c-white">3.122.444</strong>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <span>+433.534</span>
-                                                        </div>
-                                                    </td>
 
+                                                    <div class="col-12">
+                                                        <strong class="c-white">3.122.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+433.534</span>
+                                                    </div>
                                                 </div>
                                                 <div class="col-lg-2 pl-0">
                                                     <h6 class="text-capitalize">comments</h6>
-                                                    <td>
-                                                        <div class="col-12">
-                                                            <strong class="c-white">1.444</strong>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <span>+43</span>
-                                                        </div>
-                                                    </td>
+
+                                                    <div class="col-12">
+                                                        <strong class="c-white">1.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+43</span>
+                                                    </div>
+
 
                                                 </div>
                                                 <div class="col-lg-2 pl-0">
                                                     <h6 class="text-capitalize">likes</h6>
-                                                    <td>
-                                                        <div class="col-12">
-                                                            <strong class="c-white">422.444</strong>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <span>+433</span>
-                                                        </div>
-                                                    </td>
+                                                    <div class="col-12">
+                                                        <strong class="c-white">422.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+433</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">Daily subs</h6>
+                                                    <div class="col-12">
+                                                        <strong class="c-white">422</strong>
+                                                    </div>
 
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">Daily views</h6>
+                                                    <div class="col-12">
+                                                        <strong class="c-white">413.444</strong>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -179,256 +144,251 @@
                                 <div class="tab-content ">
                                     <!--table 1-->
                                     <div id="tab-1" class="tab-pane active">
+
                                         <div class="panel-body table-overflow">
+
+
                                             <table class="tableExample2 table table-striped table-hover">
                                                 <thead>
                                                 <tr>
-                                                    <th>Name</th>
+                                                    <th>Title</th>
+                                                    <th>Date</th>
                                                     <th>Views</th>
                                                     <th>Comments</th>
-                                                    <th>Like</th>
-                                                    <th>Dislike</th>
+                                                    <th>Likes</th>
+                                                    <th>%</th>
+                                                    <th>Dislikes</th>
+                                                    <th>Duration</th>
+                                                    <th class="d-inline">Avg. Duration</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 <tr>
-                                                    <td><a class="" href="date-stats.html">Lo quis quisquam.</a></td>
-                                                    <td>91,654</td>
-                                                    <td>422</td>
+
+                                                    <td>
+                                                        <a class="" href="videos-stats.html">Lo Lorem ipsum dolor sit amet. quis quisquam
+                                                        </a></td>
+                                                    <td>2001/09/29</td>
+                                                    <td>1191,654</td>
+                                                    <td>122</td>
+                                                    <td>25</td>
+                                                    <td>5</td>
                                                     <td>12</td>
-                                                    <td>72</td>
+                                                    <td>32:01</td>
+                                                    <td>
+                                                        <div class="">15:07</div>
+                                                        (25%)
+                                                    </td>
+
 
                                                 </tr>
                                                 <tr>
-                                                    <td><a class="" href="date-stats.html">Lorem met, consectetur adipisicing elit. Earum dipisicing elit. Earumdipisicing elit. Earum illo quis quisquam.</a></td>
+
+                                                    <td>
+                                                        <a class="" href="videos-stats.html">Lo quis quisquam.</a>
+                                                    </td>
+                                                    <td>2018/09/06</td>
                                                     <td>91,654</td>
-                                                    <td>42</td>
-                                                    <td>4,333</td>
-                                                    <td>422</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td><a class="" href="date-stats.html">Lorem met, consectetur adipisicing elit. Earum illo quis quisquam.</a></td>
-                                                    <td>42,354</td>
-                                                    <td>24</td>
-                                                    <td>432</td>
-                                                    <td>7,434</td>
-
-                                                </tr>
-                                                <tr>
-                                                    <td><a class="" href="date-stats.html">Lorem met, consectetur adipisicing elit. Earum illo quis quisquam.</a></td>
-                                                    <td>94,222,654</td>
-                                                    <td>42</td>
+                                                    <td>22</td>
+                                                    <td>5</td>
+                                                    <td>56</td>
                                                     <td>2</td>
-                                                    <td>72</td>
+                                                    <td>52:01</td>
+                                                    <td>
+                                                        <div class="">75:07</div>
+                                                        (15%)
+                                                    </td>
+
 
                                                 </tr>
                                                 <tr>
-                                                    <td><a class="" href="date-stats.html">Lorem met, consectetur adipisicing elit. Earum illo quis quisquam.</a></td>
-                                                    <td>91,654</td>
-                                                    <td>4,322</td>
-                                                    <td>432</td>
-                                                    <td>42</td>
+
+                                                    <td>
+                                                        <a class="" href="videos-stats.html">Lo quis quisquam.</a>
+                                                    </td>
+                                                    <td>2002/09/26</td>
+                                                    <td>3391,654</td>
+                                                    <td>1322</td>
+                                                    <td>525</td>
+                                                    <td>15</td>
+                                                    <td>182</td>
+                                                    <td>312:01</td>
+                                                    <td>
+                                                        <div class="">15:07</div>
+                                                        (05%)
+                                                    </td>
+
+
+                                                </tr>
+                                                <tr>
+
+                                                    <td>
+                                                        <a class="" href="videos-stats.html">Lo quis quisquam.</a>
+                                                    </td>
+                                                    <td>2017/09/16</td>
+                                                    <td>791,654</td>
+                                                    <td>722</td>
+                                                    <td>75</td>
+                                                    <td>64</td>
+                                                    <td>332</td>
+                                                    <td>112:01</td>
+                                                    <td>
+                                                        <div class="">15:07</div>
+                                                        (45%)
+                                                    </td>
 
                                                 </tr>
                                                 </tbody>
                                             </table>
-                                            <!--  <table   class="tableExample1 table-striped table ">
-                                                  <thead>
-                                                  <tr>
-                                                      <th>Views</th>
-                                                      <th>Comments</th>
-                                                      <th>Like</th>
-                                                      <th>Dislike</th>
-                                                  </tr>
-                                                  </thead>
-                                                  <tbody>
-                                                  <tr>
-                                                      <td class="">
-                                                          <a href="date-stats.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, quo.</a>
-                                                          32355
-                                                          <div class="" >+ <span>4</span>
-                                                          </div>
-                                                      </td>
-                                                      <td>
-                                                          4
-
-                                                      </td>
-                                                      <td>
-                                                          <div class="pt-3">
-                                                              <strong class="c-white">789</strong>
-                                                              <span>+65</span>
-                                                          </div>
-                                                      </td>
-                                                      <td>
-                                                          12444
-
-
-                                                              <span>+7333333</span>
-
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td>
-                                                          1
-                                                      </td>
-                                                      <td>
-                                                          <div class="pt-3">
-                                                              <strong class="c-white">33</strong>
-                                                              <span>+5</span>
-                                                          </div>
-                                                      </td>
-                                                      <td>
-                                                          <div class="pt-3">
-                                                              <strong class="c-white">789</strong>
-                                                              <span>+65</span>
-                                                          </div>
-                                                      </td>
-                                                      <td>
-                                                          132
-
-
-                                                              <span>+14</span>
-
-                                                      </td>
-                                                  </tr>
-                                                  <tr>
-                                                      <td>
-                                                          1
-                                                      </td>
-                                                      <td>
-                                                          <div class="pt-3">
-                                                              <strong class="c-white">33</strong>
-                                                              <span>+5</span>
-                                                          </div>
-                                                      </td>
-                                                      <td>
-                                                          <div class="pt-3">
-                                                              <strong class="c-white">789</strong>
-                                                              <span>+65</span>
-                                                          </div>
-                                                      </td>
-                                                      <td class="cw">
-                                                          123234444123
-                                                              <span>+311</span>
-
-                                                      </td>
-                                                  </tr>
-                                                  </tbody>
-                                              </table>-->
                                         </div>
                                     </div>
                                     <!--table 2-->
                                     <div id="tab-2" class="tab-pane">
-
-                                        <div class="panel-body">
-                                            <div class="col-lg-12 ">
-                                                <div class="row">
-
-                                                    <div class=" col-lg-6">
-                                                        <div class="panel panel-filled">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class=" col-lg-6">
                                                             <div class="panel-body">
                                                                 <div class="row">
                                                                     <div class="col-sm-6"><h5 class="m-t-xs">Views</h5>
                                                                     </div>
                                                                 </div>
-                                                                <div class="flot-chart-analytics">
-                                                                    <div class="flot-chart-content" id="metric1"></div>
+                                                                <div class="graph">
+                                                                    <canvas  id="myChartChannelsViews"></canvas>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="panel panel-filled">
+                                                        <div class=" col-lg-6">
                                                             <div class="panel-body">
                                                                 <div class="row">
-                                                                    <div class="col-sm-6"><h5 class="m-t-xs">Likes</h5>
+                                                                    <div class="col-sm-6"><h5 class="m-t-xs">Subscribers
+                                                                    </h5>
                                                                     </div>
+                                                                </div>
+                                                                <div class="graph">
+                                                                    <canvas  id="myChartChannelsSubscribers"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 px-0">
+                                                        <div class="row">
+                                                            <div class=" col-lg-6">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <h5 class="m-t-xs">Comments</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="graph">
+                                                                        <canvas  id="myChartChannelsComments"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" col-lg-6">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <h5 class="m-t-xs">Videos</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="graph">
+                                                                        <canvas  id="myChartChannelsVideos"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
-                                                                </div>
-                                                                <div class="flot-chart-analytics">
-                                                                    <div class="flot-chart-content" id="metric2"></div>
-                                                                </div>
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <div class="table-responsive">
+                                                                <table class="tableExample1 table table-striped">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>Date</th>
+                                                                        <th>Views</th>
+                                                                        <th>Comments</th>
+                                                                        <th>Subscribers</th>
+                                                                        <th>Videos</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>323,222</td>
+                                                                        <td>1,663,222</td>
+                                                                        <td>4,222</td>
+                                                                        <td>691,222</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>923,222</td>
+                                                                        <td>2,663,222</td>
+                                                                        <td>3,222</td>
+                                                                        <td>991,222</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>223,222</td>
+                                                                        <td>3,663,222</td>
+                                                                        <td>2,222</td>
+                                                                        <td>391,222</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>123,222</td>
+                                                                        <td>4,663,222</td>
+                                                                        <td>1,222</td>
+                                                                        <td>391,222</td>
+                                                                    </tr>
+
+                                                                    </tbody>
+                                                                </table>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-12 ">
-                                                <div class="row">
-                                                    <div class=" col-lg-6">
-                                                        <div class="panel panel-filled">
-                                                            <div class="panel-body">
-                                                                <div class="row">
-                                                                    <div class="col-sm-6">
-                                                                        <h5 class="m-t-xs">Comments</h5></div>
-                                                                </div>
-                                                                <div class="flot-chart-analytics">
-                                                                    <div class="flot-chart-content" id="metric3"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-6">
-                                                        <div class="panel panel-filled">
-                                                            <div class="panel-body">
-                                                                <div class="row">
-                                                                    <div class="col-sm-6">
-                                                                        <h5 class="m-t-xs">Dislike</h5></div>
-                                                                </div>
-                                                                <div class="flot-chart-analytics">
-                                                                    <div class="flot-chart-content" id="metric4"></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                            <div class="col-lg-12 py-3 date-average">
+                                                <div class="panel panel-filled">
+                                                    <div class="table-responsive pl-3">
 
-
-                                            <div class="col-lg-12">
-                                                <div class="row">
-                                                    <div class="table-responsive">
-                                                        <table class="tableExample1 table table-striped">
+                                                        <table class="tableExample1 table ">
                                                             <thead>
                                                             <tr>
-                                                                <th>Date</th>
-                                                                <th>Views</th>
-                                                                <th>Comments</th>
-                                                                <th>Like</th>
-                                                                <th>Dislike</th>
+                                                                <th></th>
+                                                                <th>views</th>
+                                                                <th>comments</th>
+                                                                <th>Subscribers</th>
+                                                                <th>Videos</th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                <td ><a href="channel-stats-day.html">21.01.2005</a></td>
-                                                                <td>323,222</td>
-                                                                <td>1,663,222</td>
-                                                                <td>4,222</td>
-                                                                <td>691,222</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td ><a href="channel-stats-day.html">21.01.2012</a></td>
-                                                                <td>923,222</td>
-                                                                <td>2,663,222</td>
-                                                                <td>3,222</td>
-                                                                <td>991,222</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td ><a href="channel-stats-day.html">22.11.2011</a></td>
-                                                                <td>223,222</td>
-                                                                <td>3,663,222</td>
-                                                                <td>2,222</td>
-                                                                <td>391,222</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td ><a href="channel-stats-day.html">21.01.2017</a></td>
-                                                                <td>123,222</td>
-                                                                <td>4,663,222</td>
-                                                                <td>1,222</td>
-                                                                <td>391,222</td>
-                                                            </tr>
+                                                                <td class="c-white">Daily average</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
 
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="c-white">Monthly average</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                            </tr>
                                                             </tbody>
                                                         </table>
                                                     </div>
@@ -458,12 +418,146 @@
 <script src="vendor/flot/jquery.flot.resize.min.js"></script>
 <script src="vendor/flot/jquery.flot.spline.js"></script>
 <script src="vendor/datatables/datatables.min.js"></script>
+<script src="vendor/chart.js/dist/Chart.min.js"></script>
 
 
-<!-- App scripts -->
+<!--Custom js-->
 <script src="scripts/main.js"></script>
 
+<!--Graphs-->
+<script>
+    $(document).ready(function () {
+//ChannelViews
+        var ctxChannelsViews = document.getElementById("myChartChannelsViews").getContext('2d');
+        var myChartChannelsViews = new Chart(ctxChannelsViews, {
+            type: 'bar',
+            data: {
+                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                datasets: [{
 
+                    label: 'Views',
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
+
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
+
+//ChannelSubscribers
+        var ctxChannelsSubscribers = document.getElementById("myChartChannelsSubscribers").getContext('2d');
+        var myChartChannelsSubscribers = new Chart(ctxChannelsSubscribers, {
+            type: 'bar',
+            data: {
+                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                datasets: [{
+                    label: 'Likes',
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
+
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
+
+//ChannelComments
+        var ctxChannelsComments = document.getElementById("myChartChannelsComments").getContext('2d');
+        var myChartChannelsComments = new Chart(ctxChannelsComments, {
+            type: 'bar',
+            data: {
+                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                datasets: [{
+                    label: 'Dislikes',
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
+
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
+
+//ChannelVideos
+        var ctxChannelsVideos = document.getElementById("myChartChannelsVideos").getContext('2d');
+        var myChartChannelsVideos = new Chart(ctxChannelsVideos, {
+            type: 'bar',
+            data: {
+                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                datasets: [{
+                    label: "Comments",
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
+
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero:true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
+    });
+
+</script>
 
 </body>
 

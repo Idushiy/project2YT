@@ -1138,9 +1138,7 @@ img.image-xl {
   /*text-transform: uppercase;*/
   font-weight: 500;
 }
-.navbar-nav > li:first-child > a {
-  padding-left: 0;
-}
+
 
 .navbar-nav.navbar-right a .label {
   margin: -5px 0 0 5px;
