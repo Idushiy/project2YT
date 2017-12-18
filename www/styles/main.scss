@@ -385,6 +385,7 @@ $secondary-color: #FFF;
     border-radius: 10px;
     background-color: #504b4b;
   }
+
 }
 
 .btn-menu:hover {
@@ -436,6 +437,8 @@ $secondary-color: #FFF;
     }
     text-align: center;
   }
+
+
 }
 
 .login-help {
@@ -483,6 +486,7 @@ $secondary-color: #FFF;
   }
 }
 
+
 /*button delete*/
 .dropdown {
   & .dropdown-menu {
@@ -497,6 +501,15 @@ $secondary-color: #FFF;
       color: #e7e6e8;
     }
   }
+  & input {
+    transform: scale(1.2);
+    opacity: 0.9;
+    cursor: pointer;
+
+      margin-right: 6px;
+      margin-top: 12px;
+
+  }
 }
 
 .blank {
@@ -508,6 +521,9 @@ $secondary-color: #FFF;
 .content {
   margin-left: 0 !important;
   padding: 30px 0;
+  @include break($xs, $md) {
+    margin-top: 0;
+  }
 }
 
 .link-history-and-content-mt-0 {
@@ -554,7 +570,6 @@ $secondary-color: #FFF;
 .btn-hidden {
   display: none;
   right: 0;
-  z-index: 9999;
 }
 
 .btn-checkbox {
