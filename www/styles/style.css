@@ -882,9 +882,8 @@ body.blank .content {
   margin: 0;
 }
 .container-center {
-  max-width: 35%;
-  /*max-width: 400px;*/
-  margin: 8% auto 0;
+  max-width: 400px;
+  margin: 10% auto 0;
   padding: 20px;
 }
 .container-center.sm {
@@ -1069,7 +1068,7 @@ img.image-xl {
 .navbar-default .navbar-brand:focus {
   width: 200px;
   background-color: #f6a821;
-  height: 62px;
+  height: 60px;
   padding: 20px 25px;
   font-weight: 400;
   letter-spacing: 10px;
@@ -1135,11 +1134,15 @@ img.image-xl {
 }
 .navbar-nav > li > a {
   padding: 20px 15px;
-  /*text-transform: uppercase;*/
+  text-transform: uppercase;
   font-weight: 500;
 }
-
-
+.navbar-nav > li:first-child > a {
+  padding-left: 0;
+}
+.navbar-nav > li:last-child > a {
+  padding: 10px 25px 10px 15px;
+}
 .navbar-nav.navbar-right a .label {
   margin: -5px 0 0 5px;
 }
@@ -2845,4 +2848,3 @@ fieldset[disabled] .form-control {
   color: #ffffff !important;
   padding: 6px 12px !important;
 }
-

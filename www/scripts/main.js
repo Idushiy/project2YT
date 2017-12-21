@@ -9,13 +9,16 @@ $(document).ready(function () {
     /*Table*/
     $('.tableExample1').DataTable({
         "dom": 't',
-        "iDisplayLength": 100
+        "iDisplayLength": 100,
+        "order": [[ 0, "desc" ]]
     });
 
     $('.tableExample2').DataTable({
         "dom": "<'row'<'col-lg-6'l><'col-lg-6'f>>t<'row'<'col-lg-6'i><'col-lg-6'p>>",
         "lengthMenu": [[6, 25, 50, -1], [6, 25, 50, "All"]],
-        "iDisplayLength": 6
+        "iDisplayLength": 6,
+        "order": [[ 0, "desc" ]]
+
     });
 
     $('.tableExample3').DataTable({

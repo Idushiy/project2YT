@@ -147,8 +147,8 @@
                                             <table class="tableExample2 table table-striped table-hover">
                                                 <thead>
                                                 <tr>
-                                                    <th>Title</th>
                                                     <th>Date</th>
+                                                    <th>Title</th>
                                                     <th>Views</th>
                                                     <th>Comments</th>
                                                     <th>Likes</th>
@@ -159,31 +159,14 @@
                                                 </tr>
                                                 </thead>
                                                 <tbody>
+
                                                 <tr>
-
+                                                    <td>2022/09/06</td>
                                                     <td>
-                                                        <a class="" href="videos-stats.html">Lo Lorem ipsum dolor sit amet. quis quisquam
-                                                        </a></td>
-                                                    <td>2001/09/29</td>
-                                                    <td>1191,654</td>
-                                                    <td>122</td>
-                                                    <td>25</td>
-                                                    <td>5</td>
-                                                    <td>12</td>
-                                                    <td>32:01</td>
-                                                    <td>
-                                                        <div class="">15:07</div>
-                                                        (25%)
+                                                        <a class="" href="videos-stats.html">Lo quis quis
+                                                            </a> <a href="#" class="ml-3"><span
+                                                            class=" pe-7s-back text-info"></span></a>
                                                     </td>
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <a class="" href="videos-stats.html">Lo quis quisquam.</a>
-                                                    </td>
-                                                    <td>2018/09/06</td>
                                                     <td>91,654</td>
                                                     <td>22</td>
                                                     <td>5</td>
@@ -194,46 +177,8 @@
                                                         <div class="">75:07</div>
                                                         (15%)
                                                     </td>
-
-
                                                 </tr>
-                                                <tr>
 
-                                                    <td>
-                                                        <a class="" href="videos-stats.html">Lo quis quisquam.</a>
-                                                    </td>
-                                                    <td>2002/09/26</td>
-                                                    <td>3391,654</td>
-                                                    <td>1322</td>
-                                                    <td>525</td>
-                                                    <td>15</td>
-                                                    <td>182</td>
-                                                    <td>312:01</td>
-                                                    <td>
-                                                        <div class="">15:07</div>
-                                                        (05%)
-                                                    </td>
-
-
-                                                </tr>
-                                                <tr>
-
-                                                    <td>
-                                                        <a class="" href="videos-stats.html">Lo quis quisquam.</a>
-                                                    </td>
-                                                    <td>2017/09/16</td>
-                                                    <td>791,654</td>
-                                                    <td>722</td>
-                                                    <td>75</td>
-                                                    <td>64</td>
-                                                    <td>332</td>
-                                                    <td>112:01</td>
-                                                    <td>
-                                                        <div class="">15:07</div>
-                                                        (45%)
-                                                    </td>
-
-                                                </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -251,7 +196,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="graph">
-                                                                    <canvas  id="myChartChannelsViews"></canvas>
+                                                                    <canvas id="myChartChannelsViews"></canvas>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -263,7 +208,7 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="graph">
-                                                                    <canvas  id="myChartChannelsSubscribers"></canvas>
+                                                                    <canvas id="myChartChannelsSubscribers"></canvas>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -278,7 +223,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="graph">
-                                                                        <canvas  id="myChartChannelsComments"></canvas>
+                                                                        <canvas id="myChartChannelsComments"></canvas>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -290,7 +235,7 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="graph">
-                                                                        <canvas  id="myChartChannelsVideos"></canvas>
+                                                                        <canvas id="myChartChannelsVideos"></canvas>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -412,7 +357,6 @@
 <script src="vendor/flot/jquery.flot.min.js"></script>
 <script src="vendor/flot/jquery.flot.resize.min.js"></script>
 <script src="vendor/flot/jquery.flot.spline.js"></script>
-<script src="vendor/datatables/datatables.min.js"></script>
 <script src="vendor/chart.js/dist/Chart.min.js"></script>
 
 
@@ -427,11 +371,11 @@
         var myChartChannelsViews = new Chart(ctxChannelsViews, {
             type: 'bar',
             data: {
-                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
                 datasets: [{
 
                     label: 'Views',
-                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
                     borderColor: "#d69121",
                     backgroundColor: '#f9a921',
                     borderWidth: 1
@@ -447,7 +391,7 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            beginAtZero:true,
+                            beginAtZero: true,
                             fontColor: "#91949a"
                         }
                     }]
@@ -460,10 +404,10 @@
         var myChartChannelsSubscribers = new Chart(ctxChannelsSubscribers, {
             type: 'bar',
             data: {
-                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
                 datasets: [{
                     label: 'Likes',
-                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
                     borderColor: "#d69121",
                     backgroundColor: '#f9a921',
                     borderWidth: 1
@@ -479,7 +423,7 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            beginAtZero:true,
+                            beginAtZero: true,
                             fontColor: "#91949a"
                         }
                     }]
@@ -492,10 +436,10 @@
         var myChartChannelsComments = new Chart(ctxChannelsComments, {
             type: 'bar',
             data: {
-                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
                 datasets: [{
                     label: 'Dislikes',
-                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
                     borderColor: "#d69121",
                     backgroundColor: '#f9a921',
                     borderWidth: 1
@@ -511,7 +455,7 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            beginAtZero:true,
+                            beginAtZero: true,
                             fontColor: "#91949a"
                         }
                     }]
@@ -524,10 +468,10 @@
         var myChartChannelsVideos = new Chart(ctxChannelsVideos, {
             type: 'bar',
             data: {
-                labels: [11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21,11.21],
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
                 datasets: [{
                     label: "Comments",
-                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60,15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
                     borderColor: "#d69121",
                     backgroundColor: '#f9a921',
                     borderWidth: 1
@@ -543,7 +487,7 @@
                     }],
                     yAxes: [{
                         ticks: {
-                            beginAtZero:true,
+                            beginAtZero: true,
                             fontColor: "#91949a"
                         }
                     }]
