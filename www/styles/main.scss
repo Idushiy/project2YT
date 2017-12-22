@@ -462,7 +462,36 @@ $secondary-color: #FFF;
   }
 }
 
+/*History link*/
+.link-history {
+
+  padding-top: 1rem;
+  @include break($xs, $lg) {
+    padding-top: 0 !important;
+  }
+  @include break($xs, $lg) {
+    text-align: center;
+    float: none;
+  }
+  & a {
+    @include break($xs, $lg) {
+      text-align: center;
+      float: none;
+    }
+  }
+
+}
+
 .before-link {
+  & .pe-7s-angle-right {
+    font-size: 1.7em !important;
+    @include break($xs, $lg) {
+      display: none;
+    }
+  }
+  & .ml-4 {
+    margin-left: 8px !important;
+  }
   padding-top: 6%;
   padding-bottom: 5px;
   @include break($xs, $lg) {
@@ -549,6 +578,17 @@ $secondary-color: #FFF;
   text-align: right;
   padding-right: 20px;
   float: right;
+  & .add-all {
+    position: absolute;
+    padding-top: 10px;
+    transform: scale(1.2);
+    opacity: 0.9;
+    @include break($xs, $sm) {
+      position: relative;
+      bottom: 15px;
+      text-align: center;
+    }
+  }
 }
 
 .tabs-videos-growth {
@@ -559,35 +599,12 @@ $secondary-color: #FFF;
   }
 }
 
-.link-history {
-  padding-top: 1rem;
-  @include break($xs, $lg) {
-    padding-top: 0 !important;
-  }
-  @include break($xs, $lg) {
-    text-align: center;
-    float: none;
-  }
-  & a {
-    @include break($xs, $lg) {
-      text-align: center;
-      float: none;
-    }
-  }
-  & .pe-7s-back {
-    @include break($xs, $lg) {
-      display: none;
-    }
-  }
-}
-
 .btn-hidden {
   display: none;
   right: 0;
   margin-right: 19px;
 
 }
-
 
 .btn-checkbox {
   display: inline-flex;
@@ -601,26 +618,72 @@ $secondary-color: #FFF;
   }
 }
 
+.date-average {
+  & .panel {
+    border-radius: 5px;
+  }
+  & .table-bordered {
+    & td {
+      color: #e7e7e7;
+    }
+  }
+}
+
 .tableExample1 {
+  & tr {
+    & :nth-child(2) {
+      width: 5%;
+
+    }
+    & :nth-child(4) {
+      width: 10%;
+      text-align: center;
+    }
+    & :nth-child(5) {
+      & span {
+        margin-left: -30px !important;
+      }
+    }
+
+    & :nth-child(6) {
+      width: 7%;
+      text-align: center;
+
+    }
+  }
   & td {
-    font-size: 14px;
     color: #e7e7e7;
-    & tr:first-child {
-      width: 50%;
-      font-size: 16px;
+  }
+  & .delta {
+    visibility: hidden;
+  }
+  & .delta-number {
+    & span {
+     margin-left: -15px;
+      color: #939393;
     }
   }
 }
 
 .tableExample2 {
+  & td {
+    color: #f4fffc;
+    & tr:first-child {
+      width: 50%;
+    }
+  }
+  & tbody {
+    font-size: 12px;
+  }
   & tr {
+    font-size: 11px;
     & td:first-child {
-      width: 10%;
-      font-size: 16px;
+      width: 5%;
+
     }
     & td:nth-child(2) {
-      width: 50%;
-      font-size: 16px;
+      font-size: 14px;
+      width: 60%;
       & span {
         transform: rotate(165deg);
       }
@@ -630,6 +693,20 @@ $secondary-color: #FFF;
 
     }
   }
+  & .delta {
+    visibility: hidden;
+  }
+  & .delta-number {
+    & span {
+      margin-left: -20px;
+      color: #969696;
+    }
+  }
+}
+
+/*table  buttons*/
+.week, .month, .allTime {
+  display: none;
 }
 
 /*Arrow in tabl*/
@@ -673,22 +750,16 @@ $secondary-color: #FFF;
   overflow: auto;
 }
 
-.pe-7s-back {
-  font-size: 1.2em !important;
-  @include break($xs, $lg) {
-    display: none;
-  }
-}
-
 .ui-sortable .panel-body {
   cursor: auto;
 }
 
 .move-block {
   padding-top: 20px;
-  @include break($xs, $sm){
-    margin-left: -10px;
+  @include break($xs, $lg) {
+    display: none;
   }
+
   & .btn-move {
     cursor: move;
     padding: 33px 4px;
@@ -712,3 +783,23 @@ $secondary-color: #FFF;
     }
   }
 }
+
+.go-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 25px;
+  @include break($xs, $md) {
+    right: 30px;
+  }
+  right: 70px;
+  color: rgba(108, 111, 120, 0.9) !important;
+  text-decoration: none;
+  font-size: 25px;
+  &:hover {
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    color: #7e858c !important;
+  }
+}
+

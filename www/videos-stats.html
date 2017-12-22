@@ -34,7 +34,7 @@
         <div class="row ">
             <div class="col-lg-12 before-link">
                 <div class="text-capitalize"><a class="color-inactive" href="channel.html">name-channel</a></div>
-                <div class="ml-4 pe-7s-back "></div>
+                <div class="ml-4 pe-7s-angle-right "></div>
                 <div class="text-capitalize ">
                     <a class="ml-4 " href="#">name-video</a></div>
             </div>
@@ -226,8 +226,11 @@
                                                 <tr>
                                                     <th>Date</th>
                                                     <th>Views</th>
+                                                    <th class="delta"></th>
                                                     <th>Comments</th>
+                                                    <th class="delta"></th>
                                                     <th>Like</th>
+                                                    <th class="delta"></th>
                                                     <th>Dislikes</th>
                                                 </tr>
                                                 </thead>
@@ -237,41 +240,15 @@
                                                         <div class="">
                                                             <a href="video-stats-day.html">2008/01/28</a></div>
                                                     </td>
-                                                    <td>323,222</td>
-                                                    <td>1,663,222</td>
-                                                    <td>4,222</td>
-                                                    <td>691,222</td>
+                                                    <td>11.111.222</td>
+                                                    <td class="delta-number"><span>+25,654</span></td>
+                                                    <td>22</td>
+                                                    <td class="delta-number"><span>+25,654</span></td>
+                                                    <td>22</td>
+                                                    <td class="delta-number"><span>+25,654</span></td>
+                                                    <td>22</td>
                                                 </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="">
-                                                            <a href="video-stats-day.html">2007/09/22</a></div>
-                                                    </td>
-                                                    <td>923,222</td>
-                                                    <td>2,663,222</td>
-                                                    <td>3,222</td>
-                                                    <td>991,222</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="">
-                                                            <a href="video-stats-day.html">2008/09/21</a></div>
-                                                    </td>
-                                                    <td>223,222</td>
-                                                    <td>3,663,222</td>
-                                                    <td>2,222</td>
-                                                    <td>391,222</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="">
-                                                            <a href="video-stats-day.html">2008/09/26</a></div>
-                                                    </td>
-                                                    <td>123,222</td>
-                                                    <td>4,663,222</td>
-                                                    <td>1,222</td>
-                                                    <td>391,222</td>
-                                                </tr>
+
 
                                                 </tbody>
                                             </table>
@@ -285,7 +262,7 @@
                             <div class="panel panel-filled">
                                 <div class="table-responsive pl-3">
 
-                                    <table class="tableExample1 table ">
+                                    <table class="table table-bordered">
                                         <thead>
                                         <tr>
                                             <th></th>
@@ -340,6 +317,9 @@
 <!--Graphs-->
 <script>
     $(document).ready(function () {
+
+//disabled Legend
+        Chart.defaults.global.legend.display = false;
 //Views
         var ctxVideosViews = document.getElementById("myChartVideosViews").getContext('2d');
         var myChartVideosViews = new Chart(ctxVideosViews, {
@@ -348,7 +328,7 @@
                 labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
                 datasets: [{
 
-                    label: 'Views',
+                    label: 'views',
                     data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
                     borderColor: "#d69121",
                     backgroundColor: '#f9a921',

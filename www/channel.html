@@ -150,8 +150,11 @@
                                                     <th>Date</th>
                                                     <th>Title</th>
                                                     <th>Views</th>
+                                                    <th class="delta"></th>
                                                     <th>Comments</th>
+                                                    <th class="delta"></th>
                                                     <th>Likes</th>
+                                                    <th class="delta"></th>
                                                     <th>%</th>
                                                     <th>Dislikes</th>
                                                     <th>Duration</th>
@@ -161,15 +164,18 @@
                                                 <tbody>
 
                                                 <tr>
-                                                    <td>2022/09/06</td>
+                                                    <td>2012/09/06</td>
                                                     <td>
-                                                        <a class="" href="videos-stats.html">Lo quis quis
-                                                            </a> <a href="#" class="ml-3"><span
+                                                        <a class="" href="videos-stats.html">Lorem ipsum dolor sit amet.Lo quis quis
+                                                        </a> <a href="#" class="ml-3"><span
                                                             class=" pe-7s-back text-info"></span></a>
                                                     </td>
-                                                    <td>91,654</td>
+                                                    <td>10,591,654</td>
+                                                    <td class="delta-number"><span class="day">+25,654</span><span class="week">+5,654</span><span class="month">+1,654</span><span class="allTime">+322,654</span></td>
                                                     <td>22</td>
+                                                    <td class="delta-number"><span class="day">+245,654</span><span class="week">+1,654</span><span class="month">+111,654</span><span class="allTime">+322,654</span></td>
                                                     <td>5</td>
+                                                    <td class="delta-number"><span class="day">+255,654</span><span class="week">+7,654</span><span class="month">+221,654</span><span class="allTime">+322,654</span></td>
                                                     <td>56</td>
                                                     <td>2</td>
                                                     <td>52:01</td>
@@ -178,6 +184,7 @@
                                                         (15%)
                                                     </td>
                                                 </tr>
+
 
                                                 </tbody>
                                             </table>
@@ -303,20 +310,19 @@
                                             <div class="col-lg-12 py-3 date-average">
                                                 <div class="panel panel-filled">
                                                     <div class="table-responsive pl-3">
-
-                                                        <table class="tableExample1 table ">
+                                                        <table class="table table-bordered">
                                                             <thead>
                                                             <tr>
                                                                 <th></th>
-                                                                <th>views</th>
-                                                                <th>comments</th>
+                                                                <th>Views</th>
+                                                                <th>Comments</th>
                                                                 <th>Subscribers</th>
                                                                 <th>Videos</th>
                                                             </tr>
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                <td class="c-white">Daily average</td>
+                                                                <th >Daily average</th>
                                                                 <td>xxxx</td>
                                                                 <td>xxxx</td>
                                                                 <td>xxxx</td>
@@ -324,7 +330,7 @@
 
                                                             </tr>
                                                             <tr>
-                                                                <td class="c-white">Monthly average</td>
+                                                                <th >Monthly average</th>
                                                                 <td>xxxx</td>
                                                                 <td>xxxx</td>
                                                                 <td>xxxx</td>
@@ -366,6 +372,9 @@
 <!--Graphs-->
 <script>
     $(document).ready(function () {
+
+        //disabled Legend
+        Chart.defaults.global.legend.display = false;
 //ChannelViews
         var ctxChannelsViews = document.getElementById("myChartChannelsViews").getContext('2d');
         var myChartChannelsViews = new Chart(ctxChannelsViews, {

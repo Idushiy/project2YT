@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="vendor/animate.css/animate.css"/>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/datatables/datatables.min.css"/>
 
     <!-- App styles -->
     <link rel="stylesheet" href="styles/pe-icons/pe-icon-7-stroke.css"/>
@@ -27,433 +28,521 @@
 
     <!-- Header-->
     <div id="header"></div>
-
-
+    <div class="alert alert-success" role="alert"><strong>Channel added</strong></div>
     <section class="content">
-        <div class="container-fluid">
-            <button class=" btn-hidden btn-warning btn text-capitalize affix mr-5 ">delete marked</button>
-            <div class="row m-t-sm ">
-                <div class="col-12">
-                    <!--video-->
-                    <div id="draggablePanelList">
-                        <div class="panel panel-filled">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-xs-11 info-block">
-                                        <div class="row py-4">
-                                            <div class="col-lg-2 col-xs-12">
-                                                <div class="">
-                                                    <a href="#">
-                                                        <img src="images/a3.jpg" alt="" class=" img-fluid">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-9 col-xs-12">
-                                                <div class="col-lg-12">
-                                                    <h3 class="text-capitalize py-4">
-                                                        <a href="videos-stats.html">Name Videos</a>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">views</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">comments</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">3.122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433.534</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">likes</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">1.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+43</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">dislike</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">422.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">avg view rate</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">7:52</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>40%</span>
-                                                            </div>
-                                                        </td>
-                                                    </div>
-                                                </div>
-
+        <div class="container">
+            <div class="row m-t-sm">
+                <!--Channel-->
+                <div class="col-lg-12">
+                    <div class="panel panel-filled">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-11 col-xs-11 info-block ">
+                                    <div class="row py-4">
+                                        <div class="col-lg-2 col-xs-12">
+                                            <div class="">
+                                                <img src="images/a3.jpg" alt="" class="img-circle img-fluid">
                                             </div>
                                         </div>
-                                    </div>
-                                    <!--button delete-->
-                                    <div class="col-xs-1">
-                                        <div class="dropdown text-right">
-                                            <button class="btn btn-menu dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true">
-                                                <i></i>
-                                                <i></i>
-                                                <i></i>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#">Delete</a>
-                                                </li>
-                                                <li class="btn-checkbox pr-3">
-                                                    <a class="delete-selectively" href="#">Delete selectively </a>
-                                                </li>
-
-                                            </ul>
-                                            <input type="checkbox" class="checkbox-delete btn-hidden"/>
-                                        </div>
-                                        <div class="move-block text-right">
-                                            <div class="btn-move btn btn-default">
-                                                <div class="pe-7s-angle">
-                                                    <div class="pe-7s-angle-up"></div>
-                                                    <div class="pe-7s-angle-down"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-filled">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-xs-11 info-block">
-                                        <div class="row py-4">
-                                            <div class="col-lg-2 col-xs-12">
-                                                <div class="">
-                                                    <a href="#">
-                                                        <img src="images/a3.jpg" alt="" class=" img-fluid">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-9 col-xs-12">
-                                                <div class="col-lg-12">
-                                                    <h3 class="text-capitalize py-4">
-                                                        <a href="videos-stats.html">Name Videos</a>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">views</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">comments</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">3.122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433.534</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">likes</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">1.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+43</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">dislike</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">422.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">avg view rate</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">7:52</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>40%</span>
-                                                            </div>
-                                                        </td>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--button delete-->
-                                    <div class="col-xs-1">
-                                        <div class="dropdown text-right">
-                                            <button class="btn btn-menu dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true">
-                                                <i></i>
-                                                <i></i>
-                                                <i></i>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#">Delete</a>
-                                                </li>
-                                                <li class="btn-checkbox pr-3">
-                                                    <a class="delete-selectively" href="#">Delete selectively </a>
-                                                </li>
-
-                                            </ul>
-                                            <input type="checkbox" class="checkbox-delete btn-hidden"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-filled">
-                            <div class="panel-body">
-                                <div class="row">
-                                    <div class="col-xs-11 info-block">
-                                        <div class="row py-4">
-                                            <div class="col-lg-2 col-xs-12">
-                                                <div class="">
-                                                    <a href="#">
-                                                        <img src="images/a3.jpg" alt="" class=" img-fluid">
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class=" col-lg-9 col-xs-12">
-                                                <div class="col-lg-12">
-                                                    <h3 class="text-capitalize py-4">
-                                                        <a href="videos-stats.html">Name Videos</a>
-                                                    </h3>
-                                                </div>
-                                                <div class="col-lg-12">
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">views</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">comments</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">3.122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433.534</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">likes</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">1.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+43</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">dislike</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">422.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-                                                        </td>
-
-                                                    </div>
-                                                    <div class="col-lg-2 pl-0">
-                                                        <h6 class="text-capitalize">avg view rate</h6>
-                                                        <td>
-                                                            <div class="col-12">
-                                                                <strong class="c-white">7:52</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>40%</span>
-                                                            </div>
-                                                        </td>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--button delete-->
-                                    <div class="col-xs-1">
-                                        <div class="dropdown text-right">
-                                            <button class="btn btn-menu dropdown-toggle" type="button"
-                                                    data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="true">
-                                                <i></i>
-                                                <i></i>
-                                                <i></i>
-                                            </button>
-                                            <ul class="dropdown-menu">
-                                                <li>
-                                                    <a href="#">Delete</a>
-                                                </li>
-                                                <li class="btn-checkbox pr-3">
-                                                    <a class="delete-selectively" href="#">Delete selectively </a>
-                                                </li>
-
-                                            </ul>
-                                            <input type="checkbox" class="checkbox-delete btn-hidden"/>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--modal-->
-                    <div class="row modal-window">
-                        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Add Video
-                        </button>
-                        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
-                             aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-lg">
-                                <div class="modal-content p-3">
-                                    <form method="POST" action="{{ route('addChannel') }}">
-                                        <div class="row">
-                                            <h3 class="text-center">Add YouTube Video</h3>
+                                        <div class=" col-lg-9 col-xs-12">
                                             <div class="col-lg-12">
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <h3 class="text-capitalize py-4">
+                                                    <a href="channel.html"> NewChannels 1</a>
+                                                </h3>
                                             </div>
-                                            <div class="col-lg-12 ">
-                                                <div class="form-group"><input type="text" name="url"
-                                                                               class="w-100 form-control"
-                                                                               placeholder="Url"></div>
+                                            <div class="col-lg-12">
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">subscribers</h6>
 
+                                                    <div class="col-12">
+                                                        <strong class="c-white">122.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+433</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">views</h6>
+
+                                                    <div class="col-12">
+                                                        <strong class="c-white">3.122.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+433.534</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">comments</h6>
+
+                                                    <div class="col-12">
+                                                        <strong class="c-white">1.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+43</span>
+                                                    </div>
+
+
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">likes</h6>
+                                                    <div class="col-12">
+                                                        <strong class="c-white">422.444</strong>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <span>+433</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">Daily subs</h6>
+                                                    <div class="col-12">
+                                                        <strong class="c-white">422</strong>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-2 pl-0">
+                                                    <h6 class="text-capitalize">Daily views</h6>
+                                                    <div class="col-12">
+                                                        <strong class="c-white">413.444</strong>
+                                                    </div>
+                                                </div>
                                             </div>
-
                                         </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close
-                                            </button>
-                                            <button type="submit" class="btn btn-primary">Save video</button>
-                                        </div>
-                                    </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-1 col-xs-1">
+                                    <div class="dropdown text-right">
+                                        <button class="btn btn-menu dropdown-toggle" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+                                            <i></i>
+                                            <i></i>
+                                            <i></i>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Delete</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
                     </div>
+                </div>
 
-                    <!--modal end-->
+                <!--tabs-->
+                <div class="container tabs-videos-growth">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="tabs-container">
+                                <ul class="nav nav-tabs">
+                                    <li class="active">
+                                        <a data-toggle="tab" href="#tab-1" aria-expanded="true">Videos</a></li>
+                                    <li class="">
+                                        <a data-toggle="tab" href="#tab-2" aria-expanded="false">Growth</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content ">
+                                    <!--table 1-->
+                                    <div id="tab-1" class="tab-pane active">
+                                        <div class="panel-body table-overflow">
+                                            <table class="tableExample2 table table-striped table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <th>Title</th>
+                                                    <th>Views</th>
+                                                    <th class="delta"></th>
+                                                    <th>Comments</th>
+                                                    <th class="delta"></th>
+                                                    <th>Likes</th>
+                                                    <th class="delta"></th>
+                                                    <th>%</th>
+                                                    <th>Dislikes</th>
+                                                    <th>Duration</th>
+                                                    <th class="d-inline">Avg. Duration</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+
+                                                <tr>
+                                                    <td>2012/09/06</td>
+                                                    <td>
+                                                        <a class="" href="videos-stats.html">Lorem ipsum dolor sit amet.Lo quis quis
+                                                        </a> <a href="#" class="ml-3"><span
+                                                            class=" pe-7s-back text-info"></span></a>
+                                                    </td>
+                                                    <td>10,591,654</td>
+                                                    <td class="delta-number"><span class="day">+25,654</span><span class="week">+5,654</span><span class="month">+1,654</span><span class="allTime">+322,654</span></td>
+                                                    <td>22</td>
+                                                    <td class="delta-number"><span class="day">+245,654</span><span class="week">+1,654</span><span class="month">+111,654</span><span class="allTime">+322,654</span></td>
+                                                    <td>5</td>
+                                                    <td class="delta-number"><span class="day">+255,654</span><span class="week">+7,654</span><span class="month">+221,654</span><span class="allTime">+322,654</span></td>
+                                                    <td>56</td>
+                                                    <td>2</td>
+                                                    <td>52:01</td>
+                                                    <td>
+                                                        <div class="">75:07</div>
+                                                        (15%)
+                                                    </td>
+                                                </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!--table 2-->
+                                    <div id="tab-2" class="tab-pane">
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class=" col-lg-6">
+                                                            <div class="panel-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6"><h5 class="m-t-xs">Views</h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="graph">
+                                                                    <canvas id="myChartChannelsViews"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class=" col-lg-6">
+                                                            <div class="panel-body">
+                                                                <div class="row">
+                                                                    <div class="col-sm-6"><h5 class="m-t-xs">Subscribers
+                                                                    </h5>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="graph">
+                                                                    <canvas id="myChartChannelsSubscribers"></canvas>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 px-0">
+                                                        <div class="row">
+                                                            <div class=" col-lg-6">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <h5 class="m-t-xs">Comments</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="graph">
+                                                                        <canvas id="myChartChannelsComments"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" col-lg-6">
+                                                                <div class="panel-body">
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6">
+                                                                            <h5 class="m-t-xs">Videos</h5>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="graph">
+                                                                        <canvas id="myChartChannelsVideos"></canvas>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-12">
+                                                        <div class="row">
+                                                            <div class="table-responsive">
+                                                                <table class="tableExample1 table table-striped">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>Date</th>
+                                                                        <th>Views</th>
+                                                                        <th>Comments</th>
+                                                                        <th>Subscribers</th>
+                                                                        <th>Videos</th>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>323,222</td>
+                                                                        <td>1,663,222</td>
+                                                                        <td>4,222</td>
+                                                                        <td>691,222</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>923,222</td>
+                                                                        <td>2,663,222</td>
+                                                                        <td>3,222</td>
+                                                                        <td>991,222</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>223,222</td>
+                                                                        <td>3,663,222</td>
+                                                                        <td>2,222</td>
+                                                                        <td>391,222</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <a href="channel-stats-day.html">2008/09/26</a>
+                                                                        </td>
+                                                                        <td>123,222</td>
+                                                                        <td>4,663,222</td>
+                                                                        <td>1,222</td>
+                                                                        <td>391,222</td>
+                                                                    </tr>
+
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 py-3 date-average">
+                                                <div class="panel panel-filled">
+                                                    <div class="table-responsive pl-3">
+                                                        <table class="table table-bordered">
+                                                            <thead>
+                                                            <tr>
+                                                                <th></th>
+                                                                <th>Views</th>
+                                                                <th>Comments</th>
+                                                                <th>Subscribers</th>
+                                                                <th>Videos</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>Daily average</th>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Monthly average</th>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                                <td>xxxx</td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
-
     </section>
 </div>
+
 
 <!-- Vendor scripts -->
 <script src="vendor/pacejs/pace.min.js"></script>
 <script src="vendor/jquery/dist/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/datatables/datatables.min.js"></script>
 <script src="vendor/flot/jquery.flot.min.js"></script>
 <script src="vendor/flot/jquery.flot.resize.min.js"></script>
 <script src="vendor/flot/jquery.flot.spline.js"></script>
-<script src="vendor/jquery-ui/jquery-ui.min.js"></script>
+<script src="vendor/chart.js/dist/Chart.min.js"></script>
+
 
 <!--Custom js-->
+<!--<script src="scripts/main.js"></script>-->
+
+<!--Graphs-->
 <script>
-    /*Header*/
-    $(function () {
-        $("#header").load("header.html");
+
+    $(document).ready(function () {
+
+
+        /*Table*/
+        $('.tableExample1').DataTable({
+            "dom": 't',
+            "iDisplayLength": 100,
+            "order": [[0, "desc"]]
+        });
+
+        $('.tableExample2').DataTable({
+            "dom": "<'row'<'col-lg-4'l><'col-sm-4 text-center'B><'col-lg-4'f>>t<'row'<'col-lg-6'i><'col-lg-6'p>>",
+            "lengthMenu": [[50, -1], [50, "All"]],
+            "iDisplayLength": 50,
+            "order": [[0, "desc"]],
+            buttons: [
+                { text: '24h', className: 'btn-sm btnDay', action: function () {
+                    $('.week, .month, .allTime').css('display', 'none');
+                    $('.day').css('display', 'block');
+                }},
+                { text: 'Week', className: 'btn-sm btnWeek', action: function () {
+                    $('.day, .month, .allTime').css('display', 'none');
+                    $('.week').css('display', 'block');
+                }},
+                { text: 'Month', className: 'btn-sm btnMonth', action: function () {
+                    $('.day, .week, .allTime').css('display', 'none');
+                    $('.month').css('display', 'block');
+                }},
+                { text: 'All', className: 'btn-sm btnAllTime', action: function () {
+                    $('.day, .month, .week').css('display', 'none');
+                    $('.allTime').css('display', 'block');
+
+                }}
+            ]
+        });
     });
 
-    /*btn-delete*/
-    $('.delete-selectively ').on('click', function () {
+    $(document).ready(function () {
 
-        $('.btn-hidden').toggle($('.setup-menu  input:checkbox:checked ').length >= 0);
-    });
+        //disabled Legend
+        Chart.defaults.global.legend.display = false;
+//ChannelViews
+        var ctxChannelsViews = document.getElementById("myChartChannelsViews").getContext('2d');
+        var myChartChannelsViews = new Chart(ctxChannelsViews, {
+            type: 'bar',
+            data: {
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
+                datasets: [{
 
-    /*Sortable*/
+                    label: 'Views',
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
 
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
 
-</script>
+//ChannelSubscribers
+        var ctxChannelsSubscribers = document.getElementById("myChartChannelsSubscribers").getContext('2d');
+        var myChartChannelsSubscribers = new Chart(ctxChannelsSubscribers, {
+            type: 'bar',
+            data: {
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
+                datasets: [{
+                    label: 'Likes',
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
 
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
 
-<script>
-    jQuery(function ($) {
-        var panelList = $('#draggablePanelList');
-        panelList.sortable({
-            handle: '.btn-move',
-            update: function () {
-                $('.panel-filled', panelList).each(function (index, elem) {
-                    var $listItem = $(elem),
-                        newIndex = $listItem.index();
-                });
+//ChannelComments
+        var ctxChannelsComments = document.getElementById("myChartChannelsComments").getContext('2d');
+        var myChartChannelsComments = new Chart(ctxChannelsComments, {
+            type: 'bar',
+            data: {
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
+                datasets: [{
+                    label: 'Dislikes',
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
+
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
+            }
+        });
+
+//ChannelVideos
+        var ctxChannelsVideos = document.getElementById("myChartChannelsVideos").getContext('2d');
+        var myChartChannelsVideos = new Chart(ctxChannelsVideos, {
+            type: 'bar',
+            data: {
+                labels: [11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21, 11.21],
+                datasets: [{
+                    label: "Comments",
+                    data: [15, 20, 30, 140, -30, 50, 60, -30, 50, 60, 15, 20, 30, 140, -30, 50, 60, -30, 50, 60],
+                    borderColor: "#d69121",
+                    backgroundColor: '#f9a921',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    xAxes: [{
+                        ticks: {
+                            fontColor: "#91949a"
+                        }
+
+                    }],
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true,
+                            fontColor: "#91949a"
+                        }
+                    }]
+                }
             }
         });
     });
+
 </script>
 
 </body>

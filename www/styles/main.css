@@ -443,9 +443,48 @@
   font-size: 1.1em;
 }
 
+/*History link*/
+.link-history {
+  padding-top: 1rem;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .link-history {
+    padding-top: 0 !important;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .link-history {
+    text-align: center;
+    float: none;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .link-history a {
+    text-align: center;
+    float: none;
+  }
+}
+
 .before-link {
   padding-top: 6%;
   padding-bottom: 5px;
+}
+
+.before-link .pe-7s-angle-right {
+  font-size: 1.7em !important;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+  .before-link .pe-7s-angle-right {
+    display: none;
+  }
+}
+
+.before-link .ml-4 {
+  margin-left: 8px !important;
 }
 
 @media (min-width: 300px) and (max-width: 992px) {
@@ -539,38 +578,25 @@
   float: right;
 }
 
+.modal-window .add-all {
+  position: absolute;
+  padding-top: 10px;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  opacity: 0.9;
+}
+
+@media (min-width: 300px) and (max-width: 576px) {
+  .modal-window .add-all {
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+  }
+}
+
 .tabs-videos-growth .nav-tabs a {
   font-size: 1.3em;
-}
-
-.link-history {
-  padding-top: 1rem;
-}
-
-@media (min-width: 300px) and (max-width: 992px) {
-  .link-history {
-    padding-top: 0 !important;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 992px) {
-  .link-history {
-    text-align: center;
-    float: none;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 992px) {
-  .link-history a {
-    text-align: center;
-    float: none;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 992px) {
-  .link-history .pe-7s-back {
-    display: none;
-  }
 }
 
 .btn-hidden {
@@ -592,24 +618,69 @@
   }
 }
 
-.tableExample1 td {
-  font-size: 14px;
+.date-average .panel {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.date-average .table-bordered td {
   color: #e7e7e7;
 }
 
-.tableExample1 td tr:first-child {
+.tableExample1 tr :nth-child(2) {
+  width: 5%;
+}
+
+.tableExample1 tr :nth-child(4) {
+  width: 10%;
+  text-align: center;
+}
+
+.tableExample1 tr :nth-child(5) span {
+  margin-left: -30px !important;
+}
+
+.tableExample1 tr :nth-child(6) {
+  width: 7%;
+  text-align: center;
+}
+
+.tableExample1 td {
+  color: #e7e7e7;
+}
+
+.tableExample1 .delta {
+  visibility: hidden;
+}
+
+.tableExample1 .delta-number span {
+  margin-left: -15px;
+  color: #939393;
+}
+
+.tableExample2 td {
+  color: #f4fffc;
+}
+
+.tableExample2 td tr:first-child {
   width: 50%;
-  font-size: 16px;
+}
+
+.tableExample2 tbody {
+  font-size: 12px;
+}
+
+.tableExample2 tr {
+  font-size: 11px;
 }
 
 .tableExample2 tr td:first-child {
-  width: 10%;
-  font-size: 16px;
+  width: 5%;
 }
 
 .tableExample2 tr td:nth-child(2) {
-  width: 50%;
-  font-size: 16px;
+  font-size: 14px;
+  width: 60%;
 }
 
 .tableExample2 tr td:nth-child(2) span {
@@ -620,6 +691,20 @@
 
 .tableExample2 tr td:nth-child(n+3) {
   padding-top: 12px;
+}
+
+.tableExample2 .delta {
+  visibility: hidden;
+}
+
+.tableExample2 .delta-number span {
+  margin-left: -20px;
+  color: #969696;
+}
+
+/*table  buttons*/
+.week, .month, .allTime {
+  display: none;
 }
 
 /*Arrow in tabl*/
@@ -667,16 +752,6 @@
   overflow: auto;
 }
 
-.pe-7s-back {
-  font-size: 1.2em !important;
-}
-
-@media (min-width: 300px) and (max-width: 992px) {
-  .pe-7s-back {
-    display: none;
-  }
-}
-
 .ui-sortable .panel-body {
   cursor: auto;
 }
@@ -685,9 +760,9 @@
   padding-top: 20px;
 }
 
-@media (min-width: 300px) and (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 992px) {
   .move-block {
-    margin-left: -10px;
+    display: none;
   }
 }
 
@@ -712,4 +787,27 @@
 
 .container .alert strong {
   font-size: 12px;
+}
+
+.go-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 25px;
+  right: 70px;
+  color: rgba(108, 111, 120, 0.9) !important;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .go-top {
+    right: 30px;
+  }
+}
+
+.go-top:hover {
+  -webkit-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  color: #7e858c !important;
 }
