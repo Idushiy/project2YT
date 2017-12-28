@@ -13,7 +13,7 @@
     <!-- Vendor styles -->
     <link rel="stylesheet" href="vendor/fontawesome/css/font-awesome.css"/>
     <link rel="stylesheet" href="vendor/animate.css/animate.css"/>
-    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
 
     <!-- App styles -->
     <link rel="stylesheet" href="styles/pe-icons/pe-icon-7-stroke.css"/>
@@ -25,11 +25,10 @@
 <body>
 
 
-<div class="container">
+<div class="container ">
 
     <!-- Header-->
     <div id="header"></div>
-    <div class="alert alert-success" role="alert"><strong>Channel added</strong></div>
     <section class="content">
         <div class="container-fluid">
             <!--Channels-->
@@ -39,7 +38,14 @@
                 </div>
                 <div class="col-12">
 
+                    <div class="text-right mb-2">
+                        <button class="btn btn-primary btn-top" data-toggle="modal"
+                                data-target=".bs-example-modal-lg">Add Channel
+                        </button>
+
+                    </div>
                     <div id="draggablePanelList">
+
                         <div class="panel panel-filled">
                             <div class="panel-body">
                                 <div class="row">
@@ -86,38 +92,33 @@
                                                         <div class="col-12">
                                                             <span>+43</span>
                                                         </div>
+
+
                                                     </div>
-                                                    <div class="col-lg-1 ">
+                                                    <div class="col-lg-2 ">
                                                         <h6 class="text-capitalize">likes</h6>
 
                                                         <div class="col-12">
-                                                            <strong class="c-white">2.444</strong>
+                                                            <strong class="c-white">422.444</strong>
                                                         </div>
                                                         <div class="col-12">
                                                             <span>+433</span>
                                                         </div>
                                                     </div>
-                                                    <div class="col-lg-1 text-center">
-                                                        <h6 class="text-capitalize">Videos</h6>
-                                                        <div class="col-12">
-                                                            <strong class="c-white">252</strong>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <span>+2</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-2 pl-lg-3">
+                                                    <div class="col-lg-2">
                                                         <h6 class="text-capitalize">Daily subs</h6>
 
                                                         <div class="col-12">
                                                             <strong class="c-white">422</strong>
                                                         </div>
+
                                                     </div>
                                                     <div class="col-lg-2 ">
                                                         <h6 class="text-capitalize">Daily views</h6>
                                                         <div class="col-12">
                                                             <strong class="c-white">422.444</strong>
                                                         </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -139,7 +140,9 @@
                                                 <li class="btn-checkbox pr-3">
                                                     <a class="delete-selectively" href="#">Delete selectively </a>
                                                 </li>
-
+                                                <li class="pr-3">
+                                                    <a class="btn-settings" href="#" data-toggle="modal" data-target="#myModal2">Settings</a>
+                                                </li>
                                             </ul>
                                             <div class="">
                                                 <input type="checkbox" class="checkbox-delete btn-hidden"/>
@@ -160,11 +163,8 @@
                         </div>
 
                     </div>
-
                     <!--modal-->
                     <div class="row modal-window">
-                        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Add Channel
-                        </button>
                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
                              aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -173,22 +173,40 @@
                                         <div class="row">
                                             <h3 class="text-center">Add YouTube channel</h3>
                                             <div class="col-lg-12">
-                                                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                                                <input type="hidden" name="_token" value="{{ csrf_token() }} ">
                                             </div>
                                             <div class="col-lg-12 ">
-                                                <div class="form-group"><input type="text" name="url"
-                                                                               class="w-100 form-control" placeholder="Url">
+                                                <div class="form-group">
+                                                    <input type="text" name="url" class="w-100 form-control"
+                                                           placeholder="Url ">
                                                 </div>
                                             </div>
                                             <div class="col-lg-12 ">
-                                                <input type="text" name="count" class="w-100 form-control"
+                                                <input type="text" name="count" class="w-100 form-control dadada"
                                                        placeholder="How many videos to track">
                                             </div>
                                         </div>
                                         <div class="modal-footer">
+                                            <div class="add-all">
+                                                <input type="checkbox" name="all" id="" class="mx-3 checkbox-all-video"> Add all
+                                                videos
+                                            </div>
+                                            <div class="btn-radios ">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input type="radio" id="inlineRadio1" value="option1"
+                                                           name="radioInline" >
+                                                    <label for="inlineRadio1"> Watch by the Hour </label>
+                                                </div>
+                                                <div class="radio radio-inline">
+                                                    <input type="radio" id="inlineRadio2" value="option2"
+                                                           name="radioInline" checked>
+                                                    <label for="inlineRadio2"> Watch by the Days </label>
+                                                </div>
+                                            </div>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close
                                             </button>
                                             <button type="submit" class="btn btn-primary">Save channel</button>
+                                            <hr class="mb-0 mt-4">
                                         </div>
                                     </form>
                                 </div>
@@ -196,12 +214,37 @@
                         </div>
 
                     </div>
+                    <!--modal settings-->
+                    <div class="modal modal-settings fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" id="inlineRadio3" value="days" name="stats"
+                                               checked>
+                                        <label for="inlineRadio3"> Watch by the Days</label>
+                                    </div>
+                                    <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio4" value="hours" name="stats">
+                                        <label for="inlineRadio4"> Watch by the Hour   </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button id="save-settings" type="button" class="btn btn-accent">Save
+                                        settings</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 text-right">
                     <button class="btn-hidden btn-warning btn text-capitalize">delete marked</button>
                 </div>
             </div>
         </div>
+        <!--Anchor-->
+        <a href="#" class="go-top"><i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i></a>
     </section>
 </div>
 
@@ -224,6 +267,50 @@
     $(function () {
         $("#header").load("header.html");
     });
+
+    var settings;
+    /*btn-radios*/
+    $('#save-settings').on('click', function () {
+        if( $('#inlineRadio3').is(':checked')){
+            settings =  $('#inlineRadio3').val();
+        } else {
+            settings =  $('#inlineRadio4').val();
+        }
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: '/ajax/settings/stats',
+            type: "POST",
+            data: { 'stats': settings}
+
+        });
+    });
+
+
+    /*Anchor*/
+    $(".go-top").fadeOut(0);
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $(".go-top").fadeIn(400);
+        }
+        else {
+            $(".go-top").fadeOut(400);
+        }
+    });
+
+    /*checkbox modal*/
+    $(function () {
+        $(".checkbox-all-video").on('click', function () {
+            if ($(".input-disabled").prop('disabled') == true) {
+                $(".input-disabled").prop("disabled", false)
+            } else {
+                $(".input-disabled").prop("disabled", true)
+            }
+        });
+    });
+
+
 
     /*btn-delete*/
     $('.delete-selectively ').on('click', function () {

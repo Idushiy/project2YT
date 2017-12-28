@@ -28,7 +28,7 @@
     <!-- Header-->
     <div id="header"></div>
     <!--link history-->
-    <div class="alert alert-success" role="alert"><strong>Channel added</strong></div>
+
     <div class="container link-history">
         <div class="row ">
             <div class="col-lg-12 before-link">
@@ -322,6 +322,12 @@
 
 <!--Graphs-->
 <script>
+
+    /*Header*/
+    $(function () {
+        $("#header").load("header.html");
+    });
+
     $(document).ready(function () {
 //ChannelViews
         var ctxChannelStatsViews = document.getElementById("myChartChannelStats24Views").getContext('2d');

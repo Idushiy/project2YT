@@ -25,10 +25,10 @@
 </head>
 <body>
 <div class="container ">
+
     <!-- Header-->
     <div id="header"></div>
 
-    <div class="alert alert-success" role="alert"><strong>Channel added</strong></div>
     <!--link history-->
     <div class="container ">
         <div class="row ">
@@ -340,6 +340,12 @@
 
 <!--Graphs-->
 <script>
+
+    /*Header*/
+    $(function () {
+        $("#header").load("header.html");
+    });
+
     $(document).ready(function () {
 //Views
         var ctxVideosViews = document.getElementById("myChartVideosViews").getContext('2d');

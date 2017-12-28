@@ -313,12 +313,6 @@ $secondary-color: #FFF;
   padding-left: 3rem !important;
 }
 
-.pl-lg-3 {
-  @include break($lg) {
-    padding-left: 25px;
-  }
-}
-
 .c-white {
   font-size: 15px;
 }
@@ -468,7 +462,36 @@ $secondary-color: #FFF;
   }
 }
 
+/*History link*/
+.link-history {
+
+  padding-top: 1rem;
+  @include break($xs, $lg) {
+    padding-top: 0 !important;
+  }
+  @include break($xs, $lg) {
+    text-align: center;
+    float: none;
+  }
+  & a {
+    @include break($xs, $lg) {
+      text-align: center;
+      float: none;
+    }
+  }
+
+}
+
 .before-link {
+  & .pe-7s-angle-right {
+    font-size: 1.7em !important;
+    @include break($xs, $lg) {
+      display: none;
+    }
+  }
+  & .ml-4 {
+    margin-left: 8px !important;
+  }
   padding-top: 6%;
   padding-bottom: 5px;
   @include break($xs, $lg) {
@@ -555,6 +578,45 @@ $secondary-color: #FFF;
   text-align: right;
   padding-right: 20px;
   float: right;
+  & .add-all {
+    position: absolute;
+    padding-top: 10px;
+    transform: scale(1.2);
+    opacity: 0.9;
+    @include break($xs, $sm) {
+      position: relative;
+      bottom: 15px;
+      text-align: center;
+    }
+  }
+  & .modal-footer {
+    & .btn-radios {
+      @include break( $lg) {
+        margin-right: 100px;
+      }
+
+      display: inline-block;
+      @include break($xs, $lg) {
+        text-align: center;
+        padding: 20px 0;
+
+      }
+      & .radio {
+        @include break($xs, $lg) {
+          padding: 20px 0;
+          margin-right: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+
+.modal-settings {
+  & .radio-inline {
+    margin: 15px  0 0 0;
+  }
 }
 
 .tabs-videos-growth {
@@ -565,35 +627,12 @@ $secondary-color: #FFF;
   }
 }
 
-.link-history {
-  padding-top: 1rem;
-  @include break($xs, $lg) {
-    padding-top: 0 !important;
-  }
-  @include break($xs, $lg) {
-    text-align: center;
-    float: none;
-  }
-  & a {
-    @include break($xs, $lg) {
-      text-align: center;
-      float: none;
-    }
-  }
-  & .pe-7s-back {
-    @include break($xs, $lg) {
-      display: none;
-    }
-  }
-}
-
 .btn-hidden {
   display: none;
   right: 0;
   margin-right: 19px;
 
 }
-
 
 .btn-checkbox {
   display: inline-flex;
@@ -607,48 +646,79 @@ $secondary-color: #FFF;
   }
 }
 
+.date-average {
+  & .panel {
+    border-radius: 5px;
+  }
+  & .table-bordered {
+    & td {
+      color: #e7e7e7;
+    }
+  }
+}
+
 .tableExample1 {
+
   & td {
-    font-size: 14px;
     color: #e7e7e7;
-    & tr:first-child {
-      width: 50%;
-      font-size: 16px;
+  }
+  & .delta {
+    visibility: hidden;
+  }
+  & .delta-number {
+    & span {
+      margin-left: -15px;
+      color: #939393;
     }
   }
 }
 
 .tableExample2 {
-  & tr {
-    & td:first-child {
+  & td {
+    color: #f4fffc;
+    & tr:first-child {
       width: 50%;
-      font-size: 16px;
     }
-    & td:nth-child(n+2) {
-      padding-top: 15px;
+  }
+  & tbody {
+    font-size: 12px;
+  }
+  & tr {
+    font-size: 11px;
+    & td:first-child {
+      width: 5%;
 
+    }
+    & td:nth-child(2) {
+      font-size: 14px;
+      width: 60%;
+      & span {
+        transform: rotate(165deg);
+      }
+    }
+    & td:nth-child(n+3) {
+      padding-top: 12px;
+
+    }
+  }
+  & .delta {
+    visibility: hidden;
+  }
+  & .delta-number {
+    & span {
+      margin-left: -20px;
+      color: #969696;
     }
   }
 }
 
+/*table  buttons*/
+.week, .month, .allTime {
+  display: none;
+}
+
 /*Arrow in tabl*/
-.sorting_asc::after {
-  position: relative !important;
-  display: inline !important;
-  bottom: 0 !important;
-  right: 0 !important;
-  left: 11px !important;
-}
-
-.sorting::after {
-  position: relative !important;
-  display: inline !important;
-  bottom: 0 !important;
-  right: 0 !important;
-  left: 11px !important;
-}
-
-.sorting_desc::after {
+.sorting_asc::after, .sorting::after, .sorting_desc::after {
   position: relative !important;
   display: inline !important;
   bottom: 0 !important;
@@ -672,21 +742,14 @@ $secondary-color: #FFF;
   overflow: auto;
 }
 
-.pe-7s-back {
-  font-size: 1.2em !important;
-  @include break($xs, $lg) {
-    display: none;
-  }
-}
-
 .ui-sortable .panel-body {
   cursor: auto;
 }
 
 .move-block {
   padding-top: 20px;
-  @include break($xs, $sm){
-    margin-left: -10px;
+  @include break($xs, $lg) {
+    display: none;
   }
   & .btn-move {
     cursor: move;
@@ -697,7 +760,6 @@ $secondary-color: #FFF;
       padding-bottom: 17px;
     }
   }
-
 }
 
 .container {
@@ -709,5 +771,24 @@ $secondary-color: #FFF;
     & strong {
       font-size: 12px;
     }
+  }
+}
+
+.go-top {
+  display: inline-block;
+  position: fixed;
+  bottom: 25px;
+  @include break($xs, $lg) {
+    display: none !important;
+  }
+  right: 70px;
+  color: rgba(108, 111, 120, 0.9) !important;
+  text-decoration: none;
+  font-size: 25px;
+  &:hover {
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    color: #7e858c !important;
   }
 }

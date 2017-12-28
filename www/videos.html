@@ -28,7 +28,6 @@
     <!-- Header-->
     <div id="header"></div>
 
-    <div class="alert alert-success" role="alert"><strong>Channel added</strong></div>
     <section class="content">
         <div class="container-fluid">
             <div class="row m-t-sm ">
@@ -37,353 +36,124 @@
                 </div>
                 <div class="col-12">
                     <!--video-->
-
-                        <div id="draggablePanelList">
-                            <div class="panel panel-filled">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-xs-11 info-block">
-                                            <div class="row py-4">
-                                                <div class="col-lg-2 col-xs-12">
-                                                    <div class="">
-                                                        <a href="#">
-                                                            <img src="images/a3.jpg" alt="" class=" img-fluid">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class=" col-lg-9 col-xs-12">
-                                                    <div class="col-lg-12">
-                                                        <h3 class="text-capitalize py-4">
-                                                            <a href="videos-stats.html">Name Videos</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">views</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">comments</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">3.122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433.534</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">likes</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">1.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+43</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">dislike</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">422.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">avg view rate</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">7:52</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>40%</span>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--button delete-->
-                                        <div class="col-xs-1">
-                                            <div class="dropdown text-right">
-                                                <button class="btn btn-menu dropdown-toggle" type="button"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="#">Delete</a>
-                                                    </li>
-                                                    <li class="btn-checkbox pr-3">
-                                                        <a class="delete-selectively" href="#">Delete selectively </a>
-                                                    </li>
-
-                                                </ul>
+                    <div class="text-right">
+                        <button class="btn btn-primary my-3 " data-toggle="modal" data-target=".bs-example-modal-lg">Add
+                            Video
+                        </button>
+                    </div>
+                    <div id="draggablePanelList">
+                        <div class="panel panel-filled">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-xs-11 info-block">
+                                        <div class="row py-4">
+                                            <div class="col-lg-2 col-xs-12">
                                                 <div class="">
-                                                    <input type="checkbox" class="checkbox-delete btn-hidden"/>
+                                                    <a href="#">
+                                                        <img src="images/a3.jpg" alt="" class=" img-fluid">
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="move-block text-right">
-                                                <div class="btn-move btn btn-default">
-                                                    <div class="pe-7s-angle">
-                                                        <div class="pe-7s-angle-up"></div>
-                                                        <div class="pe-7s-angle-down"></div>
+                                            <div class=" col-lg-9 col-xs-12">
+                                                <div class="col-lg-12">
+                                                    <h3 class="text-capitalize py-4">
+                                                        <a href="videos-stats.html">Name Videos</a>
+                                                    </h3>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-2 pl-0">
+                                                        <h6 class="text-capitalize">views</h6>
+
+                                                        <div class="col-12">
+                                                            <strong class="c-white">122.444</strong>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span>+433</span>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-lg-2 pl-0">
+                                                        <h6 class="text-capitalize">comments</h6>
+
+                                                        <div class="col-12">
+                                                            <strong class="c-white">3.122.444</strong>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span>+433.534</span>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-lg-2 pl-0">
+                                                        <h6 class="text-capitalize">likes</h6>
+
+                                                        <div class="col-12">
+                                                            <strong class="c-white">1.444</strong>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span>+43</span>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="col-lg-2 pl-0">
+                                                        <h6 class="text-capitalize">dislike</h6>
+
+                                                        <div class="col-12">
+                                                            <strong class="c-white">422.444</strong>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span>+433</span>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="col-lg-2 pl-0">
+                                                        <h6 class="text-capitalize">avg view rate</h6>
+
+                                                        <div class="col-12">
+                                                            <strong class="c-white">7:52</strong>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <span>40%</span>
+                                                        </div>
+
                                                     </div>
                                                 </div>
+
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-filled">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-xs-11 info-block">
-                                            <div class="row py-4">
-                                                <div class="col-lg-2 col-xs-12">
-                                                    <div class="">
-                                                        <a href="#">
-                                                            <img src="images/a3.jpg" alt="" class=" img-fluid">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class=" col-lg-9 col-xs-12">
-                                                    <div class="col-lg-12">
-                                                        <h3 class="text-capitalize py-4">
-                                                            <a href="videos-stats.html">Name Videos</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">views</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">comments</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">3.122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433.534</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">likes</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">1.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+43</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">dislike</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">422.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">avg view rate</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">7:52</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>40%</span>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
+                                    <!--button delete-->
+                                    <div class="col-xs-1">
+                                        <div class="dropdown text-right">
+                                            <button class="btn btn-menu dropdown-toggle" type="button"
+                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true">
+                                                <i></i>
+                                                <i></i>
+                                                <i></i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#">Delete</a>
+                                                </li>
+                                                <li class="btn-checkbox pr-3">
+                                                    <a class="delete-selectively" href="#">Delete selectively </a>
+                                                </li>
+                                                <li class="pr-3">
+                                                    <a class="btn-settings" href="#" data-toggle="modal" data-target="#myModal2">Settings</a>
+                                                </li>
+                                            </ul>
+                                            <div class="">
+                                                <input type="checkbox" class="checkbox-delete btn-hidden"/>
                                             </div>
                                         </div>
-                                        <!--button delete-->
-                                        <div class="col-xs-1">
-                                            <div class="dropdown text-right">
-                                                <button class="btn btn-menu dropdown-toggle" type="button"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="#">Delete</a>
-                                                    </li>
-                                                    <li class="btn-checkbox pr-3">
-                                                        <a class="delete-selectively" href="#">Delete selectively </a>
-                                                    </li>
-
-                                                </ul>
-                                                <div class="">
-                                                    <input type="checkbox" class="checkbox-delete btn-hidden"/>
-                                                </div>
-                                            </div>
-                                            <div class="move-block text-right">
-                                                <div class="btn-move btn btn-default">
-                                                    <div class="pe-7s-angle">
-                                                        <div class="pe-7s-angle-up"></div>
-                                                        <div class="pe-7s-angle-down"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-filled">
-                                <div class="panel-body">
-                                    <div class="row">
-                                        <div class="col-xs-11 info-block">
-                                            <div class="row py-4">
-                                                <div class="col-lg-2 col-xs-12">
-                                                    <div class="">
-                                                        <a href="#">
-                                                            <img src="images/a3.jpg" alt="" class=" img-fluid">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class=" col-lg-9 col-xs-12">
-                                                    <div class="col-lg-12">
-                                                        <h3 class="text-capitalize py-4">
-                                                            <a href="videos-stats.html">Name Videos</a>
-                                                        </h3>
-                                                    </div>
-                                                    <div class="col-lg-12">
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">views</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">comments</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">3.122.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433.534</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">likes</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">1.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+43</span>
-                                                            </div>
-
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">dislike</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">422.444</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>+433</span>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="col-lg-2 pl-0">
-                                                            <h6 class="text-capitalize">avg view rate</h6>
-
-                                                            <div class="col-12">
-                                                                <strong class="c-white">7:52</strong>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <span>40%</span>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--button delete-->
-                                        <div class="col-xs-1">
-                                            <div class="dropdown text-right">
-                                                <button class="btn btn-menu dropdown-toggle" type="button"
-                                                        data-toggle="dropdown" aria-haspopup="true"
-                                                        aria-expanded="true">
-                                                    <i></i>
-                                                    <i></i>
-                                                    <i></i>
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li>
-                                                        <a href="#">Delete</a>
-                                                    </li>
-                                                    <li class="btn-checkbox pr-3">
-                                                        <a class="delete-selectively" href="#">Delete selectively </a>
-                                                    </li>
-
-                                                </ul>
-                                                <div class="">
-                                                    <input type="checkbox" class="checkbox-delete btn-hidden"/>
-                                                </div>
-                                            </div>
-                                            <div class="move-block text-right">
-                                                <div class="btn-move btn btn-default">
-                                                    <div class="pe-7s-angle">
-                                                        <div class="pe-7s-angle-up"></div>
-                                                        <div class="pe-7s-angle-down"></div>
-                                                    </div>
+                                        <div class="move-block text-right">
+                                            <div class="btn-move btn btn-default">
+                                                <div class="pe-7s-angle">
+                                                    <div class="pe-7s-angle-up"></div>
+                                                    <div class="pe-7s-angle-down"></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -391,11 +161,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
 
                     <!--modal-->
                     <div class="row modal-window">
-                        <button class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-lg">Add Video
-                        </button>
                         <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog"
                              aria-labelledby="myLargeModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
@@ -407,14 +176,25 @@
                                                 <input type="hidden" name="_token" value="{{ csrf_token() }}">
                                             </div>
                                             <div class="col-lg-12 ">
-                                                <div class="form-group"><input type="text" name="url"
-                                                                               class="w-100 form-control"
-                                                                               placeholder="Url"></div>
+                                                <div class="form-group">
+                                                    <input type="text" name="url" class="w-100 form-control" placeholder="Url">
+                                                </div>
 
                                             </div>
-
                                         </div>
                                         <div class="modal-footer">
+                                            <div class="btn-radios ">
+                                                <div class="radio radio-info radio-inline">
+                                                    <input type="radio" id="inlineRadio1" value="option1"
+                                                           name="radioInline" >
+                                                    <label for="inlineRadio1"> Watch by the Hour </label>
+                                                </div>
+                                                <div class="radio radio-inline">
+                                                    <input type="radio" id="inlineRadio2" value="option2"
+                                                           name="radioInline" checked>
+                                                    <label for="inlineRadio2"> Watch by the Days </label>
+                                                </div>
+                                            </div>
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close
                                             </button>
                                             <button type="submit" class="btn btn-primary">Save video</button>
@@ -425,6 +205,29 @@
                         </div>
 
                     </div>
+                   <!-- modal settings-->
+                    <div class="modal modal-settings fade" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header text-center">
+                                    <div class="radio radio-info radio-inline">
+                                        <input type="radio" id="inlineRadio3" value="days" name="stats"
+                                               checked>
+                                        <label for="inlineRadio3"> Watch by the Days</label>
+                                    </div>
+                                    <div class="radio radio-inline">
+                                        <input type="radio" id="inlineRadio4" value="hours" name="stats">
+                                        <label for="inlineRadio4"> Watch by the Hour   </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button id="save-settings" type="button" class="btn btn-accent">Save
+                                        settings</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 text-right">
                     <button class="btn-hidden btn-warning btn text-capitalize">delete marked</button>
@@ -433,7 +236,6 @@
         </div>
     </section>
 </div>
-
 
 
 <!-- Vendor scripts -->
@@ -447,10 +249,31 @@
 
 <!--Custom js-->
 <script>
+
     /*Header*/
     $(function () {
         $("#header").load("header.html");
     });
+
+    var settings;
+    /*btn-radios*/
+    $('#save-settings').on('click', function () {
+        if ($('#inlineRadio3').is(':checked')) {
+            settings = $('#inlineRadio3').val();
+        } else {
+            settings = $('#inlineRadio4').val();
+        }
+        $.ajax({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            },
+            url: '/ajax/settings/stats',
+            type: "POST",
+            data: {'stats': settings}
+
+        });
+    });
+
 
     /*btn-delete*/
     $('.delete-selectively ').on('click', function () {
