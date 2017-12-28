@@ -313,6 +313,12 @@ $secondary-color: #FFF;
   padding-left: 3rem !important;
 }
 
+.pl-lg-3 {
+  @include break($lg) {
+    padding-left: 25px;
+  }
+}
+
 .c-white {
   font-size: 15px;
 }

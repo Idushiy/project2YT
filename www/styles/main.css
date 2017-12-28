@@ -292,6 +292,12 @@
   padding-left: 3rem !important;
 }
 
+@media (min-width: 992px) {
+  .pl-lg-3 {
+    padding-left: 25px;
+  }
+}
+
 .c-white {
   font-size: 15px;
 }
